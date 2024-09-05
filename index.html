@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvani Nalluru - Dancer and Student</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: #2575fc;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h1 {
+            margin: 15px 0;
+            font-size: 2.8em;
+            color: #333;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .profile p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #2575fc;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .registration {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration h2 {
+            font-size: 2em;
+            color: #2575fc;
+        }
+
+        .registration p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .registration a {
+            display: inline-block;
+            background-color: #6a11cb;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .registration a:hover {
+            background-color: #2575fc;
+        }
+
+        footer {
+            background-color: #2575fc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+        
+        footer .contact-info {
+            margin-top: 10px;
+        }
+
+        footer .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9em;footer.marquee {
+            background-color: #6a11cb;
+            color: white;
+        }
+
+      
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sarvani Nalluru</h1>
+        <p>Dancer &amp; Engineering Student</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#commitment">Commitment</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="profile" id="profile">
+            <img src="https://raw.githubusercontent.com/leelakrishnavemulapalli/VEMULAPALLI-LEELA-KRISHNA/main/vlk%20photo.jpg" alt="Sarvani Nalluru">
+            <h1>Sarvani Nalluru</h1>
+            <p>Welcome to my personal website! I am a passionate dancer and a dedicated student.</p>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am Sarvani Nalluru, an accomplished dancer from Repalle, currently pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College. My journey in the arts is complemented by a deep commitment to academics and painting, which I balance with my studies.
+            </p>
+        </section>
+
+        <section class="section" id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>Recognition:</strong>I was honored with a certificate of appreciation at the Maha Brunda Natyam during Krishna Pushkara.</li>
+                <li><strong>Competitions:</strong>I received accolades at the 'Kala Utsav' programs in Repalle and Bapatla divisions in 2017.</li>
+                <li><strong>Performances:</strong> I have given more than 300 performances, showcasing my skills in various significant locations, including Guntur, Krishna, Sattenapalli, Tenali, Bapatla, Vijayawada, and parts of Telangana. My performances in the 'Janmabhoomi - Ma Ooru' programs have also received high praise.</li>
+                <li><strong>Awards:</strong>I have secured numerous awards, including:
+                        <ul><li>A Gold Medal at the 10th International Youth and Child Art Exhibition.</li>
+                        <li>First Prize at the VIVA program organized by VVIT College.</li>
+                        <li>Various accolades at college events like Sankranti Sambaralu and Samskruti.</li>
+                        <li>Recognitions at several cultural and dance festivals.</li></ul>
+                </li>
+                <li><strong>Notable Praise: </strong>I have been commended by prominent figures such as MLA Anagani Sathyaprasad, former MLA Devineni Mallikarjunarao, MP Mopidevi Venkataramana Rao, IAS officer Addanki Sridhar, and Central Minister Pemmasani Chadra Sekhar.</li>
+              </ul>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul><p>Following my 10th and 12th standards, I pursued diplomas in Satvikabhinayam and Yakshaganam to deepen my expertise in Kuchipudi. Now, as a B.Tech student at Malineni Lakshmaiah Women's Engineering College, I actively participate in various college events such as:</p>
+                <ul><li><strong>Sankranti Sambaralu:</strong>Celebrating the Sankranti festival.</li>
+                <li><strong>Samskruti:</strong>A cultural event organized by the college, featuring both traditional and contemporary performances</li>
+                <li><strong>VIVA Program:</strong>I won first prize at this event hosted by VVIT College.</li>
+                </ul><p>My goal is to promote Indian culture through my dance while successfully managing my academic and artistic pursuits.</p>
+            </ul>
+        </section>
+
+        <section class="section" id="training">
+            <h2>Training</h2>
+            <p>
+                <li><strong>Kuchipudi: </strong>I have received extensive training under the esteemed Kuchipudi dancer Vedantam Durga Bhavani Garu for nine years.</li>
+                 <li><strong>Additional Training: </strong>I have completed diplomas in Satvikabhinayam and Yakshaganam, further honing my skills in Kuchipudi.</li>
+            </p>
+        </section>
+
+        <section class="section" id="commitment">
+            <h2>Commitment to Indian Culture</h2>
+            <p>
+                I am dedicated to fostering a greater interest in Kuchipudi dance and am grateful for the invaluable support of my parents, Balasri and Nalluru Venkata Sridhar, who have been instrumental in my journey to organize and perform shows.
+            </p>
+        </section>
+
+        <section class="registration" id="registration">
+            <h2>Register for Events</h2>
+            <p>Join me in upcoming dance performances and cultural programs by registering below.</p>
+            <a href="https://forms.gle/9BsEFG8UqAaGjFMbA">Register Now</a>
+        </section>
+    </div>
+
+    
+ <footer>
+        <h2>CONTACT ME</h2>
+        <hr/>
+        <ul>
+            <li><a href="mailto:sarvaninalluru1@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Email" width="80"></a></li>
+            
+        </ul>
+        <p><a id="bottom" href="#top">GO Back to the top.</a></p>
+        <p>&copy; 2024 Sarvani Nalluru. All Rights Reserved.</p>
+    </footer><footer class="marquee">
+        <marquee>Stay tuned for more updates!</marquee>
+    </footer>
+
+    <script>
+      
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
